@@ -9,8 +9,9 @@ const Navbar = () => {
       <nav
         className="relative flex items-center justify-between p-4 lg:px-52"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dvubt5hiv/image/upload/v1731265554/xxglcfgkagnwoyvk5dhw.png')`,
-          backgroundSize: 'cover',
+          backgroundImage: `url('https://res.cloudinary.com/dvubt5hiv/image/upload/v1731265554/xxglcfgkagnwoyvk5dhw.png')`
+         
+
         }}
       >
         {/* Semi-transparent red overlay */}
