@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FiPhoneCall } from "react-icons/fi";
+import { FaBox, FaUtensils, FaShoppingBag } from "react-icons/fa";
+
 
 const Exceptional = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -21,6 +23,24 @@ const Exceptional = () => {
         "We would love to hear from you! Whether you’re interested in making a reservation, inquiring about our menu, or simply wanting to know more about our services, our team is here to help. Reach out to us through phone, email, or our social media channels, and we’ll get back to you as soon as possible.",
     },
   };
+
+  const features = [
+    {
+      icon: <FaBox className="text-red-600 text-3xl" />,
+      title: "FAST DELIVERY",
+      description: "Within 30 minutes",
+    },
+    {
+      icon: <FaUtensils className="text-red-600 text-3xl " />,
+      title: "ABSOLUTE DINING",
+      description: "Best buffet restaurant",
+    },
+    {
+      icon: <FaShoppingBag className="text-red-600 text-3xl" />,
+      title: "PICKUP DELIVERY",
+      description: "Grab your food order",
+    },
+  ];
 
   return (
     <div className="px-4 py-8 md:px-12 ">
@@ -70,6 +90,23 @@ const Exceptional = () => {
           </div>
         </div>
       </div>
+      <div className="flex flex-col sm:flex-row items-center sm:space-y-0 sm:space-x-8  py-8">
+  {features.map((feature, index) => (
+    <div
+      key={index}
+      className="flex items-center space-x-4 lg:space-x-10 mx-auto sm:mx-0 lg:ml-64 p-4 lg:p-6 bg-white rounded-lg  w-full sm:w-auto"
+    >
+      <div>
+        <h3 className="bg-white rounded-full p-3 shadow-md">{feature.icon}</h3>
+      </div>
+      <div className="ml-1  sm:text-left">
+        <h3 className="text-lg font-semibold bebas-neue-regular text-gray-800">{feature.title}</h3>
+        <p className="text-gray-600 roboto-thin">{feature.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };
