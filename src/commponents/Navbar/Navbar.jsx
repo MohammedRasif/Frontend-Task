@@ -1,17 +1,15 @@
-import { useState } from 'react';
-import { Transition } from '@headlessui/react'; 
+import { useState } from "react";
+import { Transition } from "@headlessui/react";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
       <nav
         className="relative flex items-center justify-between p-4 lg:px-52"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dvubt5hiv/image/upload/v1731265554/xxglcfgkagnwoyvk5dhw.png')`
-         
-
+          backgroundImage: `url('https://res.cloudinary.com/dvubt5hiv/image/upload/v1731265554/xxglcfgkagnwoyvk5dhw.png')`,
         }}
       >
         {/* Semi-transparent red overlay */}
