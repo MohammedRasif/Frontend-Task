@@ -43,20 +43,66 @@ const Exceptional = () => {
   ];
 
   return (
-    <div className="px-4 py-8 md:px-12 ">
-      <img src="https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298251/ux3nek1icfytdtxvnhdt.png" className="absolute right-0 h-52 mt-96 hidden lg:inline-block" alt="" />
-      <div className="  flex flex-col lg:flex-row lg:px-44 lg:py-20">
-        {/* Left side image */}
-        <div className=" relative right-0 bottom-0 lg:w-1/2 mb-8 lg:mb-0">
-          <img
-            src="https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298251/tr4301an0nxoabvdraq4.png"
-            className="w-full h-64 sm:h-80 md:h-96 object-cover"
-            alt="Exceptional Service"
-          />
-        </div>
+    <div className="  ">
+     <div className="relative">
+  {/* Background Image */}
+  <img
+    src="https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298251/ux3nek1icfytdtxvnhdt.png"
+    className="absolute right-0 h-52 mt-96 hidden lg:inline-block"
+    alt=""
+  />
 
-        {/* Right side content */}
-        <div className="lg:w-1/2 lg:pl-10">
+<div className="flex flex-col lg:flex-row lg:px-44 lg:py-20">
+  {/* Left side image with overlay box */}
+  <div className="relative lg:w-1/2 mb-8 lg:mb-0">
+    <img
+      src="https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298251/tr4301an0nxoabvdraq4.png"
+      className="w-full h-64 sm:h-80 md:h-96 object-cover"
+      alt="Exceptional Service"
+    />
+
+    {/* Overlay Box */}
+    <div className="absolute top-4 left-4 lg:top-8 lg:left-8 bg-white p-4 rounded-lg shadow-md w-48 h-28 flex items-center justify-center">
+      {/* Circle with Number */}
+      <div className="relative flex items-center justify-center w-16 h-16">
+        <svg className="absolute inset-0" viewBox="0 0 36 36">
+          {/* Background Circle */}
+          <circle
+            cx="18"
+            cy="18"
+            r="15.5"
+            fill="none"
+            stroke="currentColor"
+            className="text-gray-300"
+            strokeWidth="3"
+          />
+          {/* Foreground Circle */}
+          <circle
+            cx="18"
+            cy="18"
+            r="15.5"
+            fill="none"
+            stroke="currentColor"
+            className="text-yellow-500"
+            strokeWidth="3"
+            strokeDasharray="85 100" // Controls circle progress
+            strokeLinecap="round" // Rounded ends
+            transform="rotate(-90 18 18)" // Start at top
+          />
+        </svg>
+        <span className="text-lg font-semibold text-gray-800">50+</span>
+      </div>
+
+      {/* Text Box */}
+      <div className="ml-4 p-1 rounded">
+        <p className="text-gray-800 text-[20px] font-semibold">Market</p>
+        <p className="text-gray-800 text-[14px] font-semibold">Experiences</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Right side content */}
+  <div className="lg:w-1/2 lg:pl-10">
           {/* Buttons to switch content */}
           <div className="flex space-x-4 mb-6 border-b-2 border-red-600">
             {["about", "experience", "contact"].map((tab) => (
@@ -89,6 +135,11 @@ const Exceptional = () => {
             </div>
           </div>
         </div>
+
+  
+</div>
+
+        
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:space-y-0 sm:space-x-8  py-8">
   {features.map((feature, index) => (
