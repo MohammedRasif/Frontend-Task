@@ -87,7 +87,7 @@ const PopularFoot = () => {
         className="absolute left-0 h-52 mt-48 hidden lg:inline-block"
         alt=""
       />
-      <div className="px-4 md:px-16 lg:px-44 bg-[#FBF7F2] py-5">
+      <div className="px-4 md:px-16 lg:px-44 bg-[#FBF7F2] py-5 pb-14">
         <div className="flex items-center space-x-1 text-sm font-semibold lg:mt-10">
           <FaSquareFull className="text-[7px]" />
           <h6>Crispy, Every Bite Taste</h6>
