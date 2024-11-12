@@ -1,5 +1,9 @@
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
+import { LuAlarmClock } from "react-icons/lu";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
@@ -21,7 +25,9 @@ const Footer = () => {
             
             {/* Opening Hours */}
             <div>
-              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular">⏰</div>
+              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular lg:ml-24"><LuAlarmClock />
+
+              </div>
               <h3 className="font-semibold text-lg mb-2">OPENING HOURS</h3>
               <p>Monday - Sunday</p>
               <p>9:00 AM to 11:30 PM</p>
@@ -29,7 +35,8 @@ const Footer = () => {
   
             {/* Let's Talk */}
             <div>
-              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular">📞</div>
+              <div className="text-yellow-400 text-3xl mb-4 lg:ml-24 bebas-neue-regular"><FiPhoneCall />
+              </div>
               <h3 className="font-semibold text-lg mb-2">LET'S TALK</h3>
               <p>Phone: 1-800-222-4545</p>
               <p>Fax: 1-800-222-4545</p>
@@ -37,7 +44,8 @@ const Footer = () => {
   
             {/* Book a Table */}
             <div>
-              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular">✉️</div>
+              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular lg:ml-24"><MdOutlineEmail />
+              </div>
               <h3 className="font-semibold text-lg mb-2">BOOK A TABLE</h3>
               <p>Email: demo@website.com</p>
               <p>Support: support@website.com</p>
@@ -45,7 +53,8 @@ const Footer = () => {
   
             {/* Address */}
             <div>
-              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular">📍</div>
+              <div className="text-yellow-400 text-3xl mb-4 bebas-neue-regular lg:ml-24"><IoLocationOutline />
+              </div>
               <h3 className="font-semibold text-lg mb-2">OUR ADDRESS</h3>
               <p>123 Street New York City, United States Of America.</p>
             </div>
