@@ -52,7 +52,7 @@ const Exceptional = () => {
     alt=""
   />
 
-<div className="flex flex-col lg:flex-row lg:px-44 lg:py-20">
+<div className="flex flex-col lg:flex-row lg:px-44 lg:py-20 lg:p-0 p-5">
   {/* Left side image with overlay box */}
   <div className="relative lg:w-1/2 mb-8 lg:mb-0">
     <img
