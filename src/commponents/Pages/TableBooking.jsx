@@ -1,10 +1,13 @@
+
+
 const TableBooking = () => {
+
     return (
         <div className="bg-cover bg-center min-h-screen flex items-center justify-center px-4 md:px-6 py-8" 
          style={{ backgroundImage: 'url(https://res.cloudinary.com/dvubt5hiv/image/upload/v1731393163/jlijjlqyektsaznbjyi3.jpg)' }}>
       <div className=" bg-opacity-80 p-6 md:p-12 rounded-lg max-w-6xl w-full items-start text-white">
         
-        {/* Text Section */}
+      
         <div className="max-w-md mb-10 md:mb-0">
           <span className="text-red-500 font-bold text-lg">Book Now</span>
           <h1 className="text-3xl md:text-5xl font-bold my-4 bebas-neue-regular">BOOK YOUR TABLE</h1>
@@ -13,7 +16,7 @@ const TableBooking = () => {
           </p>
         </div>
 
-        {/* Form Section */}
+       
         <form className="w-full max-w-lg">
           <div className="flex flex-col md:flex-row justify-between mb-4 gap-4">
             <input 
