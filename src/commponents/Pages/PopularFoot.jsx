@@ -35,13 +35,13 @@ const PopularFoot = () => {
       name: "Vegan Salad",
       description: "Fresh organic vegetables",
       image:
-        "https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298250/salad.png",
+        "https://res.cloudinary.com/dvubt5hiv/image/upload/v1727429593/samples/breakfast.jpg",
     },
     {
       name: "Grilled Tofu",
       description: "Barbecue-style grilled tofu",
       image:
-        "https://res.cloudinary.com/dvubt5hiv/image/upload/v1731298250/tofu.png",
+        "https://res.cloudinary.com/dvubt5hiv/image/upload/v1727429594/samples/dessert-on-a-plate.jpg",
     },
   ];
 
@@ -131,7 +131,7 @@ const PopularFoot = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-28 h-28 object-cover mx-auto mb-4"
+                  className="w-28 h-28 object-cover rounded-full mx-auto mb-4"
                 />
                 <div className="w-12 h-[2px] bg-red-500 mx-auto my-2" />
                 <h3 className="text-xl bebas-neue-regular">{item.name}</h3>
