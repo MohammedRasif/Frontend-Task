@@ -4,7 +4,7 @@ import { FaSquareFull } from "react-icons/fa";
 
 const PopularFoot = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsPerPage, setItemsPerPage] = useState(4); // Default items per page for large screens
+  const [itemsPerPage, setItemsPerPage] = useState(4); 
 
   const foodItems = [
     {
@@ -45,23 +45,22 @@ const PopularFoot = () => {
     },
   ];
 
-  // Adjust the number of items per page based on screen width
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setItemsPerPage(1); // 1 item per page for small screens
+        setItemsPerPage(1); 
       } else if (window.innerWidth < 1024) {
-        setItemsPerPage(2); // 2 items per page for medium screens
+        setItemsPerPage(2); 
       } else {
-        setItemsPerPage(4); // 4 items per page for large screens
+        setItemsPerPage(4); 
       }
     };
 
-    handleResize(); // Call the function once to set the initial value
-    window.addEventListener("resize", handleResize); // Add event listener to handle window resize
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Clean up on unmount
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -79,10 +78,7 @@ const PopularFoot = () => {
     );
   };
 
-  const visibleItems = foodItems.slice(
-    currentIndex * itemsPerPage,
-    (currentIndex + 1) * itemsPerPage
-  );
+
 
   return (
     <div className="relative">

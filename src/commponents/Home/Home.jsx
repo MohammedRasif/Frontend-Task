@@ -1,6 +1,7 @@
 import Banner from "../Pages/Banner";
 import Exceptional from "../Pages/Exceptional";
 import PopularFoot from "../Pages/PopularFoot";
+import TableBooking from "../Pages/TableBooking";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <Exceptional></Exceptional>
             <PopularFoot></PopularFoot>
+            <TableBooking></TableBooking>
         </div>
     );
 };

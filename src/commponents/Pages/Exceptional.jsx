@@ -145,7 +145,7 @@ const Exceptional = () => {
   {features.map((feature, index) => (
     <div
       key={index}
-      className="flex items-center space-x-4 lg:space-x-10 mx-auto sm:mx-0 lg:ml-64 p-4 lg:p-6 bg-white rounded-lg  w-full sm:w-auto"
+      className="flex items-center space-x-4 lg:space-x-10 mx-auto sm:mx-0 lg:ml-96 p-4 lg:p-6 bg-white rounded-lg  w-full sm:w-auto"
     >
       <div>
         <h3 className="bg-white rounded-full p-3 shadow-md">{feature.icon}</h3>
